@@ -1,32 +1,31 @@
-site_name: 纷云文档中心
-site_url: https://docs.lesschat.com
+site_name: 纷云开发者文档
+site_url: https://api.lesschat.com
 repo_url: https://github.com/lesschat/docs
 repo_name: GitHub
 site_favicon: favicon.ico
-site_description: 纷云文档中心
+site_description: 纷云开发者文档
 site_author: yctech
 copyright:  'Copyright&copy;2015 纷云'
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
 include_next_prev: false
 pages:
-- [index.md, '首页']
-- [using.md, 使用指南]
+- [index.md, '快速开始']
+- [api.md, API]
 
-- [using/account.md, '成员使用指南', '帐户设置']
-- [using/message.md, '成员使用指南', '消息']
-- [using/channel.md, '成员使用指南', '频道与群组']
-- [using/notification.md, '成员使用指南', '通知']
-- [using/integration.md, '成员使用指南', '第三方服务']
-- [using/client.md, '成员使用指南', '客户端指南']
+- [api/incoming.md, '接入API', 'Incoming Webhook']
+- [api/outgoing.md, '接入API', 'Outgoing Webhook']
+- [api/remote.md, '接入API', '远程机器人控制']
+- [api/command.md, '接入API', '自定义命令']
+- [api/custombot.md, '接入API', '自定义机器人']
 
-- [admin.md, 管理员手册]
+- [doc.md, '文档']
+- [doc/formatting.md, '开发文档', '消息格式化']
+- [doc/attachments.md, '开发文档', '附加消息内容']
 
-- [admin/setting.md, '纷云管理员手册', '团队设置']
-- [admin/invite.md, '纷云管理员手册', '添加团队成员']
-- [admin/members.md, '纷云管理员手册', '成员管理']
-- [admin/permission.md, '纷云管理员手册', '权限设置']
-- [admin/customize.md, '纷云管理员手册', '团队自定义']
-- [support.md, '联系客服']
+
+- [resource.md, '资源']
+- [resource/community.md, '开发资源', '社区开源项目']
+- [resource/support.md, '开发资源', '联系我们']
 
 #theme: readthedocs
 theme_dir: 'theme/default'
