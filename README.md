@@ -1,4 +1,4 @@
-# guide
+# docs
 ## 环境搭建
 
    1.安装brew[如果没有brew命令]
