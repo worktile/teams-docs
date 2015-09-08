@@ -1,0 +1,25 @@
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="{{ homepage_url }}">帮助中心</a> <span class="bread-slash">/</span></li>
+    {% if current_page %}
+      {% for doc in current_page.ancestors %}
+        {% if doc.link %}
+          <li><a href="{{ doc.link|e }}">{{ doc.title }}</a><span class="bread-slash">/</span></li>
+        {% else %}
+          <li>{{ doc.title }} <span class="bread-slash">/</span></li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if current_page %}<li>{{ current_page.title }}</li>{% endif %}
+    <li class="wy-breadcrumbs-aside">
+      {% if repo_url %}
+        {% if repo_name == 'GitHub' %}
+          <a href="{{ repo_url }}" class="icon icon-github"> 在GitHub上编辑</a>
+        {% elif repo_name == 'Bitbucket' %}
+          <a href="{{ repo_url }}" class="icon icon-bitbucket"> 在BitBucket上编辑</a>
+        {% endif %}
+      {% endif %}
+    </li>
+  </ul>
+  <hr/>
+</div>

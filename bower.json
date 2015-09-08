@@ -1,0 +1,7 @@
+{
+  "name": "worktile docs",
+  "dependencies": {
+    "jquery": ">= 1.9.0",
+    "modernizr":null
+  }
+}

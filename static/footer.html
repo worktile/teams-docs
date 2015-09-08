@@ -1,0 +1,27 @@
+<footer>
+  {% if next_page or previous_page %}
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      {% if next_page %}
+        <a href="{{ next_page.url }}" class="float-right" title="{{ next_page.title }}"/>下一篇 <i class="fa fa-angle-double-right"></i></a>
+      {% endif %}
+      {% if previous_page %}
+        <a href="{{ previous_page.url }}" title="{{ previous_page.title }}"><i class="fa fa-angle-double-left"></i> 上一篇</a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <hr/>
+
+  <div role="contentinfo" class="contentinfo">
+    <!-- Copyright etc -->
+    {% if copyright %}
+      <p>
+        <a href="https://lesschat.com/about">关于我们</a>
+        <a href="https://lesschat.com/contact">联系我们</a>
+        <a href="https://blog.lesschat.com">官方博客</a>
+        <a href="https://lesschat.com/integration">服务列表</a>
+        <span class="pull-right">{{ copyright }}</span>
+      </p>
+    {% endif %}
+  </div>
+</footer>

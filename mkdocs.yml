@@ -1,0 +1,23 @@
+site_name: WORKTILE
+site_url: http://www.baidu.com
+repo_url: https://github.com/mkdocs/mkdocs/
+repo_name: github
+site_favicon: favicon.ico
+site_description: machuanjia
+site_author: macj
+copyright:  '京ICP备13017353号-3 京公网安备11010802012357号'
+google_analytics: ['UA-36723568-3', 'mkdocs.org']
+include_next_prev: false
+pages:
+- [index.md, 首页]
+- [api.md, API]
+- [doc.md, 文档]
+- [email/api.md, '邮件', '邮件api']
+- [email/doc.md, '邮件', '邮件doc']
+- [about.md, 关于我们]
+- [element.md, 示例]
+#theme: readthedocs
+theme_dir: 'theme/default'
+#theme_dir: 'theme/mkdocs'
+docs_dir: 'docs'
+site_dir: 'site'
