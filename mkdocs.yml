@@ -1,21 +1,33 @@
-site_name: WORKTILE
-site_url: http://www.baidu.com
-repo_url: https://github.com/mkdocs/mkdocs/
-repo_name: github
+site_name: 纷云文档中心
+site_url: https://docs.lesschat.com
+repo_url: https://github.com/lesschat/docs
+repo_name: GitHub
 site_favicon: favicon.ico
-site_description: machuanjia
-site_author: macj
-copyright:  '京ICP备13017353号-3 京公网安备11010802012357号'
-google_analytics: ['UA-36723568-3', 'mkdocs.org']
+site_description: 纷云文档中心
+site_author: yctech
+copyright:  'Copyright&copy;2015 纷云'
+#google_analytics: ['UA-36723568-3', 'mkdocs.org']
 include_next_prev: false
 pages:
-- [index.md, 首页]
-- [api.md, API]
-- [doc.md, 文档]
-- [email/api.md, '邮件', '邮件api']
-- [email/doc.md, '邮件', '邮件doc']
-- [about.md, 关于我们]
-- [element.md, 示例]
+- [index.md, '首页']
+- [using.md, 使用指南]
+
+- [using/account.md, '成员使用指南', '帐户设置']
+- [using/message.md, '成员使用指南', '消息']
+- [using/channel.md, '成员使用指南', '频道与群组']
+- [using/notification.md, '成员使用指南', '通知']
+- [using/integration.md, '成员使用指南', '第三方服务']
+- [using/client.md, '成员使用指南', '客户端指南']
+
+- [admin.md, 管理员手册]
+
+- [admin/setting.md, '纷云管理员手册', '团队设置']
+- [admin/invite.md, '纷云管理员手册', '添加团队成员']
+- [admin/members.md, '纷云管理员手册', '成员管理']
+- [admin/permission.md, '纷云管理员手册', '权限设置']
+- [admin/customize.md, '纷云管理员手册', '团队自定义']
+- [support.md, '联系客服']
+
 #theme: readthedocs
 theme_dir: 'theme/default'
 #theme_dir: 'theme/mkdocs'
