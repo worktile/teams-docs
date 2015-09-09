@@ -53,29 +53,30 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest('./theme/default/fonts'));
 });
 
+gulp.task('watch', function () {
+    // 监听sass
+    gulp.watch('./static/css/*.*', function () {
+        gulp.run('style');
+    });
+    // 监听js
+    gulp.watch('./static/js/*.js', function () {
+        gulp.run('js');
+    });
+    // 监听img
+    gulp.watch('./static/img/*.*', function () {
+        gulp.run('img');
+    });
 
-// 监听sass
-gulp.watch('./static/css/*.*', function(){
-    gulp.run('style');
-});
-// 监听js
-gulp.watch('./static/js/*.js', function(){
-    gulp.run('js');
-});
-// 监听img
-gulp.watch('./static/img/*.*', function(){
-    gulp.run('img');
+    // 监听fonts
+    gulp.watch('./static/fonts/*.*', function () {
+        gulp.run('fonts');
+    });
+    // 监听fonts
+    gulp.watch('./static/*.html', function () {
+        gulp.run('html');
+    });
+
 });
 
-// 监听fonts
-gulp.watch('./static/fonts/*.*', function(){
-    gulp.run('fonts');
-});
-// 监听fonts
-gulp.watch('./static/*.html', function(){
-    gulp.run('html');
-});
-
-
-
-gulp.task('default', ['clean','style','html','img','fonts','js']);
+gulp.task('default', ['clean','style','html','img','fonts','js','watch']);
+gulp.task('build', ['clean','style','html','img','fonts','js']);
