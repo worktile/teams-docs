@@ -1,3 +1,4 @@
+util.print: Use console.log instead
 /*
  * This file is copied from the upstream ReadTheDocs Sphinx
  * theme. To aid upgradability this file should *not* be edited.
@@ -3894,7 +3895,7 @@ div[class^='highlight'] pre {
   color: #333333;
 }
 .na {
-  color: teal;
+  color: #008080;
 }
 .nb {
   color: #0086b3;
@@ -3904,10 +3905,10 @@ div[class^='highlight'] pre {
   font-weight: bold;
 }
 .no {
-  color: teal;
+  color: #008080;
 }
 .ni {
-  color: purple;
+  color: #800080;
 }
 .ne {
   color: #900;
@@ -3921,10 +3922,10 @@ div[class^='highlight'] pre {
   color: #555555;
 }
 .nt {
-  color: navy;
+  color: #000080;
 }
 .nv {
-  color: teal;
+  color: #008080;
 }
 .ow {
   font-weight: bold;
@@ -3981,13 +3982,13 @@ div[class^='highlight'] pre {
   color: #999999;
 }
 .vc {
-  color: teal;
+  color: #008080;
 }
 .vg {
-  color: teal;
+  color: #008080;
 }
 .vi {
-  color: teal;
+  color: #008080;
 }
 .il {
   color: #009999;
@@ -4771,7 +4772,7 @@ a .rst-content tt {
   border: none;
   border-left: solid 3px #ccc;
   background: #f0f0f0;
-  color: gray;
+  color: #808080;
 }
 .rst-content dl:not(.docutils) dl dt .headerlink {
   color: #404040;
@@ -5068,11 +5069,13 @@ a:visited {
   opacity: 0.8;
 }
 h2,
-h3,
+h3 {
+  color: #51bcb6;
+}
 h4,
 h5,
 h6 {
-  color: #51bcb6;
+  color: #555;
 }
 hr {
   border-top: solid 1px #eceff4;
@@ -5118,11 +5121,13 @@ hr {
   color: #6e8093 !important;
   padding: 0.6em 1.6em;
   border-left: solid 5px transparent;
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 .wy-menu-vertical li ul.subnav li a {
   color: #abb6c3 !important;
   padding: 0.6em 2.6em;
   border-left: solid 5px transparent;
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 .wy-menu-vertical span {
   line-height: 18px;

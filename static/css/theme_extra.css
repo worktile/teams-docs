@@ -1,3 +1,4 @@
+util.print: Use console.log instead
 /*
  * Tweak the overal size to better match RTD.
  */
@@ -130,11 +131,13 @@ a:visited {
   opacity: 0.8;
 }
 h2,
-h3,
+h3 {
+  color: #51bcb6;
+}
 h4,
 h5,
 h6 {
-  color: #51bcb6;
+  color: #555;
 }
 hr {
   border-top: solid 1px #eceff4;
@@ -180,11 +183,13 @@ hr {
   color: #6e8093 !important;
   padding: 0.6em 1.6em;
   border-left: solid 5px transparent;
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 .wy-menu-vertical li ul.subnav li a {
   color: #abb6c3 !important;
   padding: 0.6em 2.6em;
   border-left: solid 5px transparent;
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 .wy-menu-vertical span {
   line-height: 18px;
