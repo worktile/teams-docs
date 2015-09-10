@@ -15,8 +15,8 @@ pages:
 - [api/incoming.md, '接入API', 'Incoming Webhook']
 - [api/outgoing.md, '接入API', 'Outgoing Webhook']
 - [api/remote.md, '接入API', '远程机器人控制']
-- [api/command.md, '接入API', '自定义命令']
 - [api/custombot.md, '接入API', '自定义机器人']
+- [api/command.md, '接入API', '自定义命令']
 
 - [doc.md, '文档']
 - [doc/formatting.md, '开发文档', '消息格式化']
