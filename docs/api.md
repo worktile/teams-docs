@@ -2,7 +2,7 @@
 ### [Incoming Webhook](api/incoming.md)
 
 
-### [Outgoing Webhook](api/outoing.md)
+### [Outgoing Webhook](api/outgoing.md)
 
 
 ### [远程机器人控制](api/remote.md)
