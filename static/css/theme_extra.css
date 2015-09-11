@@ -229,10 +229,32 @@ code {
   font-size: 100%;
   margin-left: 5px;
   margin-right: 5px;
-  color: #f6695b;
+  color: #6e8093;
   background: #fbfbfb;
   padding: 2px 5px;
   border-radius: 3px;
+}
+pre {
+  display: block;
+  border: solid 1px #eceff4;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: #fff;
+}
+pre code {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #6e8093;
+}
+.section p {
+  margin-bottom: 20px;
+}
+.section p img {
+  border: solid 1px #eceff4;
+  border-radius: 4px;
 }
 footer p {
   font-size: 14px;
