@@ -23,5 +23,37 @@
 ![pic](/img/api_incoming_02.png)
 
 ### 自定义名称和图标
+在添加完Incoming Webhook服务后，可以自己定义Incoming Webhook的显示名称和头像，如下面的截图中自定义了一个名为部署机器人的Webhook：
 
 ![pic](/img/api_incoming_03.png)
+
+### 定义复杂消息格式
+你可以使用纷云提供的消息格式规则，发送更为丰富的消息格式，具体的消息格式化规则请参考[消息格式化](/doc/formatting)，同时还可以使用附加消息内容的方式，为纷云消息中提供更多内容，详细描述请参考[附加消息内容](/doc/attachments)。下面是一个带有附加内容的消息格式：
+
+![pic](/img/api_incoming_04.png)
+
+在发起的POST请求中，Body中发送的数据格式为：
+```
+{
+	"attachment": {
+	    "fallback"   : "用于移动端将提示信息显示在首页上",
+	    "color"      : "#f1867e",
+	    "pretext"    : "在显示消息正文之前显示的文本内容",
+	    "title"      : "消息正文标题",
+	    "title_link" : "http://lesschat.com",
+	    "text"       : "这里是普通消息的内容，可以很长，也支持换行。",
+	    "fields"     : [
+	        {
+	            "title": "分配者",
+	            "value": "Terry",
+	            "short": 1
+	        },
+	        {
+	            "title": "优先级",
+	            "value": "高",
+	            "short": 1
+	        }
+	    ]
+	}
+}
+```
