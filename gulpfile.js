@@ -55,7 +55,7 @@ gulp.task('fonts', function () {
 
 gulp.task('watch', function () {
     // 监听sass
-    gulp.watch('./static/css/*.*', function () {
+    gulp.watch('./static/img/*.*', function () {
         gulp.run('style');
     });
     // 监听js
