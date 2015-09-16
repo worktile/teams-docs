@@ -19,7 +19,7 @@ function error(event) {
 
 gulp.task('clean', function (cb) {
     // You can use multiple globbing patterns as you would with `gulp.src`
-    del(['./theme/default/css/*.css','./theme/default/js/*.js','./theme/default/img/*.*','./theme/default/fonts/*.*'], cb);
+    del(['./theme/default/css/*.css', './theme/default/js/*.js', './theme/default/img/*.*', './theme/default/fonts/*.*'], cb);
 });
 gulp.task('style', function () {
     return gulp.src('./static/css/site.less')
@@ -33,7 +33,7 @@ gulp.task('style', function () {
         .pipe(gulp.dest('./theme/default/css'));
 });
 gulp.task('js', function () {
-    return gulp.src(['./bower_components/jquery/dist/jquery.js','./bower_components/modernizr/modernizr.js','./static/js/highlight.pack.js','./static/js/theme.js'])
+    return gulp.src(['./bower_components/jquery/dist/jquery.js', './bower_components/modernizr/modernizr.js', './static/js/highlight.pack.js', './static/js/theme.js'])
         .pipe(plumber({errorHandler: error}))
         .pipe(concat('mkdocs-min.js'))
         .pipe(uglify())
@@ -55,7 +55,7 @@ gulp.task('fonts', function () {
 
 gulp.task('watch', function () {
     // 监听sass
-    gulp.watch('./static/img/*.*', function () {
+    gulp.watch('./static/css/*.*', function () {
         gulp.run('style');
     });
     // 监听js
@@ -78,5 +78,5 @@ gulp.task('watch', function () {
 
 });
 
-gulp.task('default', ['clean','style','html','img','fonts','js','watch']);
-gulp.task('build', ['clean','style','html','img','fonts','js']);
+gulp.task('default', ['clean', 'style', 'html', 'img', 'fonts', 'js', 'watch']);
+gulp.task('build', ['clean', 'style', 'html', 'img', 'fonts', 'js']);
