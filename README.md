@@ -1,4 +1,7 @@
-# docs
+# API docs for LessChat 
+
+地址：http://api.lesschat.com
+
 ## 环境搭建
 
    1.安装brew[如果没有brew命令]
@@ -38,6 +41,6 @@
 
    2.`mkdocs build`
 
-## 官方api
+## mkdocs 官方api
 
 [api](http://markdown-docs-zh.readthedocs.org/zh_CN/latest/)
